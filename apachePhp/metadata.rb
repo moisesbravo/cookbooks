@@ -7,6 +7,8 @@ long_description 'Installs/Configures apachePhp'
 version '0.1.0'
 recipe "apachePhp", "instalacion Stack Apache"
 
+
+depends "iptables"
 depends "apache2"
 
 
