@@ -7,6 +7,11 @@
 
 include_recipe "apache2"
 
+#habilita el puerto 80
+iptables_rule 'http' do
+  action :enable
+end
+
 
 
 
