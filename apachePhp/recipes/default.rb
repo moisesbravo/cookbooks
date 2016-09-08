@@ -6,6 +6,7 @@
 
 
 include_recipe "apache2"
+include_recipe "iptables"
 
 #habilita el puerto 80
 iptables_rule 'http' do
