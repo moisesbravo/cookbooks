@@ -6,13 +6,9 @@
 
 
 include_recipe "apache2"
-include_recipe "iptables"
 
 
-#habilita el puerto 80
-iptables_rule 'http' do
-  action :enable
-end
+
 
 #Cambia el sitio por defecto de apache.
 apache_site "default" do
