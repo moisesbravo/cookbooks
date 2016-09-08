@@ -7,9 +7,6 @@ long_description 'Installs/Configures apachePhp'
 version '0.1.0'
 recipe "apachePhp", "instalacion Stack Apache"
 
-depends "apt"
-depends "apache2"
-
 
 # If you upload to Supermarket you should set this so your cookbook
 # gets a `View Issues` link
