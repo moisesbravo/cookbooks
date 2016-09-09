@@ -37,8 +37,8 @@ directory node["phpapp"]["path"] do
 end
 
 #crea el el virutal host  para la aplicacion.
-web_app 'phpapp' do
-  template 'site.conf'
-  docroot node['phpapp']['path']
-  server_name node['phpapp']['server_name']
+web_app 'apachePhp' do
+  template 'site.conf.erb'
+  docroot node['apachePhp']['path']
+  server_name node['apachePhp']['server_name']
 end

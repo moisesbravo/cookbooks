@@ -1,2 +1,2 @@
-default["phpapp"]["path"] = "/var/www/phpapp"
-default['phpapp']['server_name'] = "phpapp"
+default["apachePhp"]["path"] = "/var/www/phpapp"
+default['apachePhp']['server_name'] = "phpapp"
