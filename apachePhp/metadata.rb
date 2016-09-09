@@ -9,7 +9,7 @@ recipe "apachePhp", "instalacion Stack Apache"
 
 depends "iptables"
 depends "apache2"
-
+depends "php"
 
 # If you upload to Supermarket you should set this so your cookbook
 # gets a `View Issues` link
