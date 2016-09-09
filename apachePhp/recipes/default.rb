@@ -28,7 +28,7 @@ apache_site "default" do
 end
 
 
-directory node["phpapp"]["path"] do
+directory node["apachePhp"]["path"] do
   owner "root"
   group "root"
   mode "0755"
