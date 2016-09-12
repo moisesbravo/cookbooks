@@ -10,9 +10,7 @@ include_recipe "apache2::mod_rewrite"
 include_recipe "apache2::mod_deflate"
 include_recipe "apache2::mod_headers"
 include_recipe "iptables"
-include_recipe "php"
-include_recipe "php::module_mysql"
-include_recipe "apache2::mod_php5"
+include_recipe "php5-ppa"
 
 #habilita el puerto 80
 iptables_rule 'http' do
