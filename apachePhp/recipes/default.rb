@@ -21,13 +21,20 @@ end
 
 
 #apt-get -y update
-execute[apt-get-update]
+execute "update-upgrade" do
+  command "apt-get update && apt-get upgrade -y"
+  action :run
+end
+
 #add-apt-repository ppa:ondrej/php
 apt_repository 'php5.6' do
   uri          'ppa:ondrej/php'
 end
 #apt-get -y update
-execute[apt-get-update]
+execute "update-upgrade" do
+  command "apt-get update && apt-get upgrade -y"
+  action :run
+end
 
 
 package "php5.6" do
