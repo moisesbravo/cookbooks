@@ -6,6 +6,7 @@
 
 
 include_recipe "apache2"
+include_recipe "apt"
 include_recipe "apache2::mod_rewrite"
 include_recipe "apache2::mod_deflate"
 include_recipe "apache2::mod_headers"
@@ -18,6 +19,27 @@ iptables_rule 'http' do
 end
 
 
+
+#apt-get -y update
+execute[apt-get-update]
+#add-apt-repository ppa:ondrej/php
+apt_repository 'php5.6' do
+  uri          'ppa:ondrej/php'
+end
+#apt-get -y update
+execute[apt-get-update]
+
+
+package "php5.6" do
+  action :install
+end
+
+#apt-get -y install php5.6 php5.6-mcrypt php5.6-mbstring php5.6-curl php5.6-cli php5.6-mysql php5.6-gd php5.6-intl php5.6-xsl
+node['apachePhp']['modules'].each do |install_packages|
+  package install_packages do
+    action :install
+  end
+end
 
 
 #Cambia el sitio por defecto de apache.
