@@ -1,6 +1,7 @@
 default["apachePhp"]["path"] = "/var/www/phpapp"
 default['apachePhp']['server_name'] = "phpapp"
 
+
    
 default['apachePhp']['modules'] = [
   'php5.6-mcrypt',
@@ -12,3 +13,6 @@ default['apachePhp']['modules'] = [
  'php5.6-intl',
  'php5.6-xsl'
 ]
+
+
+default[:deploy] = {}
