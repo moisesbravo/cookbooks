@@ -1,5 +1,5 @@
-default["apachePhp"]["path"] = "/var/www/phpapp"
-default['apachePhp']['server_name'] = "phpapp"
+default["apachePhp"]["path"] = "/var/www/web_dbs_lat_khsa"
+default['apachePhp']['server_name'] = "web_dbs_lat_khsa"
 
    
 default['apachePhp']['modules'] = [
