@@ -1,6 +1,7 @@
 default["apachePhp"]["path"] = "/var/www/web_dbs_lat_khsa"
 default['apachePhp']['server_name'] = "web_dbs_lat_khsa"
 
+
    
 default['apachePhp']['modules'] = [
   'php5.6-mcrypt',
@@ -12,3 +13,6 @@ default['apachePhp']['modules'] = [
  'php5.6-intl',
  'php5.6-xsl'
 ]
+
+
+default[:deploy] = {}
