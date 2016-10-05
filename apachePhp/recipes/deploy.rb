@@ -1,6 +1,6 @@
 
 app = search(:aws_opsworks_app).first
-app_path = default["apachePhp"]["path"]
+app_path = node["apachePhp"]["path"]
 
 package "git" do
   # workaround for:
