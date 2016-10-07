@@ -1,13 +1,9 @@
-<<<<<<< HEAD
+
 
 default["apachePhp"]["path"] = "/var/www/phpapp"
 default['apachePhp']['server_name'] = "phpapp"
 default['apachePhp']["deploy"] ="/var/tmp/deploy"
 default["apachePhp"]["proyecto"] = "/var/tmp/deploy/proyecto"
-=======
-default["apachePhp"]["path"] = "/var/www/web_dbs_lat_khsa"
-default['apachePhp']['server_name'] = "web_dbs_lat_khsa"
->>>>>>> 5bda669e84ca4dbb54e4b7df5d72da6c907373c7
 
 
    
