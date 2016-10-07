@@ -1,6 +1,6 @@
 
 app = search(:aws_opsworks_app).first
-app_path = node["apachePhp"]["path"]
+app_path = node["apachePhp"]["deploy"]
 
 package "git" do
   # workaround for:
@@ -17,3 +17,10 @@ end
      action :sync
   end
 
+bash "install_deploy" do
+  code <<-EOL
+  mv node["apachePhp"]["proyecto"] node["apachePhp"]["path"]
+  rm -r  node["apachePhp"]["deploy"]
+
+  EOL
+end
