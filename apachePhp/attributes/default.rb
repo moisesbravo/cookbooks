@@ -1,5 +1,8 @@
+
 default["apachePhp"]["path"] = "/var/www/phpapp"
 default['apachePhp']['server_name'] = "phpapp"
+default['apachePhp']["deploy"] ="/var/tmp/deploy"
+default["apachePhp"]["proyecto"] = "/var/tmp/deploy/proyecto"
 
 
    
