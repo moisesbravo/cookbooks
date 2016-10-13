@@ -12,8 +12,8 @@
 execute 'download-inspector' do
   command "wget https://d1wk0tztpsntt1.cloudfront.net/linux/latest/install"
 end
-##
-##execute 'install-inspector' do
-#  command "sudo bash install"
-#end
+
+execute 'install-inspector' do
+ command "sudo bash install"
+end
 
